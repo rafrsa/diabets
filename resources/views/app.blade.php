@@ -17,11 +17,12 @@
 
     <link href="{{ URL::asset('css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="{{ URL::asset('css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ URL::asset('css/style-custom.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="http://demo.geekslabs.com/materialize/v2.1/layout03/css/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
 
-    <link href="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    {{--<link href="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">--}}
+    {{--<link href="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">--}}
+    {{--<link href="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">--}}
 </head>
 
 <body>
@@ -37,22 +38,32 @@
         @include("dashboard/menu")
     </div>
 </header>
+<div id="main">
+    <div class="wrapper">
+        @include("dashboard/menu-leftside")
+        <section id="content">
+            <div class="container page-content">
+                @include("dashboard/dashboard")
+            </div>
+        </section>
+    </div>
+</div>
 
 <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/materialize.js"></script>
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>--}}
 
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartist-js/chartist.min.js"></script>
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartist-js/chartist.min.js"></script>--}}
 
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartjs/chart.min.js"></script>
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartjs/chart-script.js"></script>
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartjs/chart.min.js"></script>--}}
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/chartjs/chart-script.js"></script>--}}
 
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/sparkline/jquery.sparkline.min.js"></script>
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/sparkline/sparkline-script.js"></script>
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/sparkline/jquery.sparkline.min.js"></script>--}}
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/sparkline/sparkline-script.js"></script>--}}
 
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/vectormap-script.js"></script>
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>--}}
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>--}}
+{{--<script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins/jvectormap/vectormap-script.js"></script>--}}
 
 <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v2.1/layout03/js/plugins.js"></script>
 

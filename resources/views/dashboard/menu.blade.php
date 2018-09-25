@@ -9,13 +9,13 @@
             </li>
             <li>
                 <a href="#!" class="cyan-text">
-                    <i class="mdi-communication-email"></i>
+                    <i class="mdi-image-colorize"></i>
                     <span>Medição</span>
                 </a>
             </li>
             <li>
                 <a class="dropdown-menu cyan-text" href="#!" data-activates="Reldropdown">
-                    <i class="mdi-action-invert-colors"></i>
+                    <i class="mdi-action-assessment"></i>
                     <span>Relatórios<i class="mdi-navigation-arrow-drop-down right"></i></span>
                 </a>
             </li>
