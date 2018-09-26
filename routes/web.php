@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('app');
 });
+
+Route::get('medicao', function () {
+    return view('medicao/inicial');
+});
+
+// Route::resource('app', 'AppController');
